@@ -1,0 +1,26 @@
+body{
+	background-image:url("../images/overlook.jpeg");
+	background-position:100%;
+}
+.headline{margin-top:60px;}
+h1 {font-size: 5rem; text-align: center;}
+h2 {font-size: 4rem; text-align: center;}
+h3 {font-size: 3.5rem;margin-bottom: 25px;}
+h4 {font-size: 2rem;}
+p{font-size:1.5rem;}
+
+#output{ background-image:url("../images/clouds.png"); opacity:.7; margin: auto;} */
+.topicSelect {width:20%; padding-bottom:70px;}
+.footer{text-align: center; position:fixed; bottom:0px; width:100%; background-color: black; color:white;}
+
+.hover{ background-color: steelblue; color: white; }
+
+/*.formEntry{ width:40%;float:left;}*/
+.buttons{width: 580px; margin:10px auto;}
+.form-inline .active, .form-inline .active.focus{background-color: navy; color: white;}
+
+.checkbox label{width:150px;}
+.checkbox-inline{ font-size:2.25rem; font-weight: bolder;}
+
+.blue{color:blue;}
+.hidden{ visibility: hidden; }

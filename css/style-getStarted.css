@@ -1,0 +1,15 @@
+body{
+	background-image: url("../images/overlook.jpg");
+	background-position:500%;
+}
+h1 {font-size: 5rem;}
+h2 {font-size: 4rem;}
+p{font-size:1.5rem;}
+
+.content{width: 80%; background-image:url("../images/clouds.png"); opacity:.7; margin: auto;}
+.subcontent {width:60%; margin:auto; padding-bottom:70px;}
+.footer{text-align: center; position:fixed; bottom:0px; width:100%; background-color: black; color:white;}
+
+.hover{ background-color: steelblue; color: white; }
+
+.dropdown-menu {}
