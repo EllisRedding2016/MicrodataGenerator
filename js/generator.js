@@ -19,7 +19,7 @@ $(document).ready(function(){
 	.on('click','button', function(){
 		var transfer = $(this).attr('value');
 		$("#businessType span").text(transfer);
-		if(transfer)
+		
 			
 	});
 
