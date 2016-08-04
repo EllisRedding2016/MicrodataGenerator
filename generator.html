@@ -5,10 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Schema.org Generator for SEO | JSON-LD</title>	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	 <script src="js/bootstrap.min.js"></script>
-	 <script src="js/generator.js"></script>
-	 <link rel="stylesheet" href="css/style-generator.css">
+	<link rel="stylesheet" href="css/style-generator.css">
+		 
 </head>
 <body>
 	<header>
@@ -37,321 +35,310 @@
 			<h1 class="col-sm-12"> Schema.org Generator | JSON-LD Generator | DIY SEO </h1>
 			<h2 class="col-sm-12">Get Found in the Cloud - Microdata Generator using Schema.org Vocabulary</h2>
 		</div>
-		<section class="topicSelect col-sm-2">
-			
-			<div class="dropdown btn-group-vertical">
-				<div class="solo btn-group">
-					<button id="animal" type="button" class="btn btn-primary" value ="AnimalShelter">Animal Shelter</button>
-				</div>
-				<div class="btn-group">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Automotive <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="AutoBodyShop">Auto Body Shop</li>
-						<li value="AutoDealer">Auto Dealer</li>
-						<li value="AutoPartsStore">Auto Parts Store</li>
-						<li value="AutoRental">Rental Car Agency</li>
-						<li value="AutoRepair">Auto Repair Shop</li>
-						<li value="AutoWash">Car Wash</li>
-						<li value="GasStation">Gas Station</li>
-						<li value="MotorcycleDealer">Motorcycle Dealer</li>
-						<li value="MotorcycleRepair">Motorcycle Repair Shop</li>
-					</ul>
-				</div>
-				<div class="solo btn-group">
-					<button type="button" class="btn btn-primary" value="ChildCare">Child Care</button>
-				</div>
-				<div class="solo btn-group">
-					<button type="button" class="btn btn-primary" value="DryCleaningOrLaundry">Dry Cleaning</button>
-				</div>
+		<!-- ============================= Topic Select ========================================================== -->
+		<div class="row">
+			<section class="topicSelect col-sm-2">
 				
-				<div class="btn-group">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Emergency Service  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="FireStation">Fire Station</li>	
-						<li value="Hospital">Hospital</li>
-						<li value="PoliceStation">Police Station</li>
-					</ul>
-				</div>
-				<div class="solo btn-group">
-					<button value="EmplymentAgency" type="button" class="btn btn-primary">Employment Agency  </button>
-				</div>
-				
-				<div class="btn-group">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Entertainment  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="AmusementPark">Amusement Park</li>
-						<li value="ArtGallery">Art Gallery</li>
-						<li value="Casino">Casino</li>
-						<li value="ComedyClub">Comedy Club</li>
-						<li value="MovieTheater">Movie Theater</li>
-						<li value="NightClub">Night Club</li>
-					</ul>
-				</div>
-				<div class="btn-group">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Financial Service  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="AccountingService">Accounting</li>
-						<li value="AutomatedTeller">ATM</li>
-						<li value="BankOrCreditUnion">Bank / Credit Union</li>
-						<li value="InsuranceAgency">Insurance Agency</li>
-					</ul>
-				</div>
-				<div class="btn-group">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Restraunt / Food Service  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="Bakery">Bakery</li>
-						<li value="BarOrPub">Bar / Pub</li>
-						<li value="Brewery">Brewery</li>
-						<li value="CafeOrCoffeeShop">Cafe / Coffee Shop</li>
-						<li value="FastFoodRestaurant">Fastfood Restraunt</li>
-						<li value="IceCreamShop">Ice Cream Shop</li>
-						<li value="Restaurant">Restaurant</li>
-						<li value="Winery">Winery</li>
-					</ul>
-				</div>
-				<div class="solo btn-group">
-					<button type="button" value="PostOffice" class="btn btn-primary">Post Office</button>
-				</div>
-				<div class="btn-group">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Health and Beauty  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="BeautySalon">Beauty Salon</li>
-						<li value="DaySpa">Day Spa</li>
-						<li value="Dentist">Dentist</li>
-						<li value="HairSalon">Hair Salon</li>
-						<li value="HealthClub">Health Club</li>
-						<li value="NailSalon">Nail Salon</li>
-						<li value="TattooParlor">Tattoo Parlor</li>
-					</ul>
-				</div>
-				<div class="btn-group">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Home and Construction  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="Electrician">Electric / Electrician</li>
-						<li value="GeneralContractor">General Contractor</li>
-						<li value="HVAC">Heating and AC</li>
-						<li value="HousePainter">Painting</li>
-						<li value="Locksmith">Locksmith</li>
-						<li value="MovingCompany">Moving</li>
-						<li value="Plumber">Plumbing</li>
-						<li value="RoofingContractor">Roofing</li>
-					</ul>
-				</div>
-				<div class="solo btn-group">
-					<button value="InternetCafe" type="button" class="btn btn-primary">Internet Cafe</button>
-				</div>
-				<div class="btn-group">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Legal  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="Attorney">Attorney</li>
-						<li value="Notary">Notary</li>
-					</ul>
-				</div>
-				<div class="btn-group">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Lodging  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="BedAndBreakfast">Bed and Breakfast</li>
-						<li value="Hostel">Hostel</li>
-						<li value="Hotel">Hotel</li>
-						<li value="Motel">Motel</li>
-					</ul>
-				</div>
+				<div class="dropdown btn-group-vertical">
+					<div class="solo btn-group">
+						<button id="animal" type="button" class="btn btn-primary" value ="AnimalShelter">Animal Shelter</button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Automotive <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="AutoBodyShop">Auto Body Shop</li>
+							<li value="AutoDealer">Auto Dealer</li>
+							<li value="AutoPartsStore">Auto Parts Store</li>
+							<li value="AutoRental">Rental Car Agency</li>
+							<li value="AutoRepair">Auto Repair Shop</li>
+							<li value="AutoWash">Car Wash</li>
+							<li value="GasStation">Gas Station</li>
+							<li value="MotorcycleDealer">Motorcycle Dealer</li>
+							<li value="MotorcycleRepair">Motorcycle Repair Shop</li>
+						</ul>
+					</div>
+					<div class="solo btn-group">
+						<button type="button" class="btn btn-primary" value="ChildCare">Child Care</button>
+					</div>
+					<div class="solo btn-group">
+						<button type="button" class="btn btn-primary" value="DryCleaningOrLaundry">Dry Cleaning</button>
+					</div>
+					
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Emergency Service  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="FireStation">Fire Station</li>	
+							<li value="Hospital">Hospital</li>
+							<li value="PoliceStation">Police Station</li>
+						</ul>
+					</div>
+					<div class="solo btn-group">
+						<button value="EmplymentAgency" type="button" class="btn btn-primary">Employment Agency  </button>
+					</div>
+					
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Entertainment  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="AmusementPark">Amusement Park</li>
+							<li value="ArtGallery">Art Gallery</li>
+							<li value="Casino">Casino</li>
+							<li value="ComedyClub">Comedy Club</li>
+							<li value="MovieTheater">Movie Theater</li>
+							<li value="NightClub">Night Club</li>
+						</ul>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Financial Service  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="AccountingService">Accounting</li>
+							<li value="AutomatedTeller">ATM</li>
+							<li value="BankOrCreditUnion">Bank / Credit Union</li>
+							<li value="InsuranceAgency">Insurance Agency</li>
+						</ul>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Restaurant / Food Service  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="Bakery">Bakery</li>
+							<li value="BarOrPub">Bar / Pub</li>
+							<li value="Brewery">Brewery</li>
+							<li value="CafeOrCoffeeShop">Cafe / Coffee Shop</li>
+							<li value="FastFoodRestaurant">Fastfood Restraunt</li>
+							<li value="IceCreamShop">Ice Cream Shop</li>
+							<li value="Restaurant" id="selectRestaurant">Restaurant</li>
+							<li value="Winery">Winery</li>
+						</ul>
+					</div>
+					<div class="solo btn-group">
+						<button type="button" value="PostOffice" class="btn btn-primary">Post Office</button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Health and Beauty  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="BeautySalon">Beauty Salon</li>
+							<li value="DaySpa">Day Spa</li>
+							<li value="Dentist">Dentist</li>
+							<li value="HairSalon">Hair Salon</li>
+							<li value="HealthClub">Health Club</li>
+							<li value="NailSalon">Nail Salon</li>
+							<li value="TattooParlor">Tattoo Parlor</li>
+						</ul>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Home and Construction  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="Electrician">Electric / Electrician</li>
+							<li value="GeneralContractor">General Contractor</li>
+							<li value="HVAC">Heating and AC</li>
+							<li value="HousePainter">Painting</li>
+							<li value="Locksmith">Locksmith</li>
+							<li value="MovingCompany">Moving</li>
+							<li value="Plumber">Plumbing</li>
+							<li value="RoofingContractor">Roofing</li>
+						</ul>
+					</div>
+					<div class="solo btn-group">
+						<button value="InternetCafe" type="button" class="btn btn-primary">Internet Cafe</button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Legal  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="Attorney">Attorney</li>
+							<li value="Notary">Notary</li>
+						</ul>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Lodging  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="BedAndBreakfast">Bed and Breakfast</li>
+							<li value="Hostel">Hostel</li>
+							<li value="Hotel">Hotel</li>
+							<li value="Motel">Motel</li>
+						</ul>
+					</div>
 
-				<div class="btn-group">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Media Broadcasting  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="RadioStation">Radio Station</li>
-						<li value="TelevisionStation">TV Station</li>
-					</ul>
-				</div>
-				<div class="solo btn-group">
-					<button value="RealEstateAgent" type="button" class="btn btn-primary">Real Estate Agency</button>
-				</div>
-				<div class="solo btn-group">
-					<button value="RecyclingCenter" type="button" class="btn btn-primary">Recycling Center</button>
-				</div>
-				<div class="solo btn-group">
-					<button type="button" value="SelfStorage" class="btn btn-primary">Self Storage</button>
-				</div>
-				<div class="solo btn-group">
-					<button type="button" value="ShoppingCenter" class="btn btn-primary">Shopping Center</button>
-				</div>
-				<div class="btn-group dropup">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sports  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value="BowlingAlley">Bowling Alley</li>
-						<li value="ExerciseGym">Gym</li>
-						<li value="GolfCourse">Golf Course</li>
-						<li value="HealthClub">Health Club</li>
-						<li value="PublicSwimmingPool">Swimming Pool</li>
-						<li value="SkiResort">Ski Resort</li>
-						<li value="SportsClub">Sports Club</li>
-						<li value="StadiumOrArena">Stadium or Arena</li>
-						<li value="TennisComplex">Tennis Complex</li>
-					</ul>
-				</div>
-				<div class="btn-group dropup">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Store  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value='AutoPartsStore'>Auto Parts Store</li>
-						<li value='BikeStore'>Bike Store</li>
-						<li value='BookStore'>Book Store</li>
-						<li value='ClothingStore'>Clothing Store</li>
-						<li value='ComputerStore'>Computer Store</li>
-						<li value='ConvenienceStore'>Convenience Store</li>
-						<li value='DepartmentStore'>Department Store</li>
-						<li value='ElectronicsStore'>Electronics Store</li>
-						<li value='Florist'>Florist</li>
-						<li value='FurnitureStore'>Furniture Store</li>
-						<li value='GardenStore'>Garden Store</li>
-						<li value='GroceryStore'>Grocery Store</li>
-						<li value='HardwareStore'>Hardware Store</li>
-						<li value='HobbyShop'>Hobby Shop</li>
-						<li value='HomeGoodsStore'>Home Goods Store</li>
-						<li value='JewelryStore'>Jewelry Store</li>
-						<li value='LiquorStore'>Liquor Store</li>
-						<li value='MensClothingStore'>Mens Clothing Store</li>
-						<li value='MobilePhoneStore'>Mobile Phone Store</li>
-						<li value='MovieRentalStore'>Movie Rental Store</li>
-						<li value='MusicStore'>Music Store</li>
-						<li value='OfficeEquipmentStore'>Office Equipment Store</li>
-						<li value='OutletStore'>Outlet Store</li>
-						<li value='PawnShop'>Pawn Shop</li>
-						<li value='PetStore'>Pet Store</li>
-						<li value='ShoeStore'>Shoe Store</li>
-						<li value='SportingGoodsStore'>Sporting Goods Store</li>
-						<li value='TireShop'>Tire Shop</li>
-						<li value='ToyStore'>Toy Store</li>
-						<li value='WholesaleStore'>Wholesale Store</li>
-					</ul>
-				</div>
-				<div class="btn-group dropup">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Travel  <span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li value='TouristInformationCenter'>Tourist Information Center</li>
-						<li value='TravelAgency'>Travel Agency</li>
-					</ul>
-				</div>
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Media Broadcasting  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="RadioStation">Radio Station</li>
+							<li value="TelevisionStation">TV Station</li>
+						</ul>
+					</div>
+					<div class="solo btn-group">
+						<button value="RealEstateAgent" type="button" class="btn btn-primary">Real Estate Agency</button>
+					</div>
+					<div class="solo btn-group">
+						<button value="RecyclingCenter" type="button" class="btn btn-primary">Recycling Center</button>
+					</div>
+					<div class="solo btn-group">
+						<button type="button" value="SelfStorage" class="btn btn-primary">Self Storage</button>
+					</div>
+					<div class="solo btn-group">
+						<button type="button" value="ShoppingCenter" class="btn btn-primary">Shopping Center</button>
+					</div>
+					<div class="btn-group dropup">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sports  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value="BowlingAlley">Bowling Alley</li>
+							<li value="ExerciseGym">Gym</li>
+							<li value="GolfCourse">Golf Course</li>
+							<li value="HealthClub">Health Club</li>
+							<li value="PublicSwimmingPool">Swimming Pool</li>
+							<li value="SkiResort">Ski Resort</li>
+							<li value="SportsClub">Sports Club</li>
+							<li value="StadiumOrArena">Stadium or Arena</li>
+							<li value="TennisComplex">Tennis Complex</li>
+						</ul>
+					</div>
+					<div class="btn-group dropup">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Store  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value='AutoPartsStore'>Auto Parts Store</li>
+							<li value='BikeStore'>Bike Store</li>
+							<li value='BookStore'>Book Store</li>
+							<li value='ClothingStore'>Clothing Store</li>
+							<li value='ComputerStore'>Computer Store</li>
+							<li value='ConvenienceStore'>Convenience Store</li>
+							<li value='DepartmentStore'>Department Store</li>
+							<li value='ElectronicsStore'>Electronics Store</li>
+							<li value='Florist'>Florist</li>
+							<li value='FurnitureStore'>Furniture Store</li>
+							<li value='GardenStore'>Garden Store</li>
+							<li value='GroceryStore'>Grocery Store</li>
+							<li value='HardwareStore'>Hardware Store</li>
+							<li value='HobbyShop'>Hobby Shop</li>
+							<li value='HomeGoodsStore'>Home Goods Store</li>
+							<li value='JewelryStore'>Jewelry Store</li>
+							<li value='LiquorStore'>Liquor Store</li>
+							<li value='MensClothingStore'>Mens Clothing Store</li>
+							<li value='MobilePhoneStore'>Mobile Phone Store</li>
+							<li value='MovieRentalStore'>Movie Rental Store</li>
+							<li value='MusicStore'>Music Store</li>
+							<li value='OfficeEquipmentStore'>Office Equipment Store</li>
+							<li value='OutletStore'>Outlet Store</li>
+							<li value='PawnShop'>Pawn Shop</li>
+							<li value='PetStore'>Pet Store</li>
+							<li value='ShoeStore'>Shoe Store</li>
+							<li value='SportingGoodsStore'>Sporting Goods Store</li>
+							<li value='TireShop'>Tire Shop</li>
+							<li value='ToyStore'>Toy Store</li>
+							<li value='WholesaleStore'>Wholesale Store</li>
+						</ul>
+					</div>
+					<div class="btn-group dropup">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Travel  <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li value='TouristInformationCenter'>Tourist Information Center</li>
+							<li value='TravelAgency'>Travel Agency</li>
+						</ul>
+					</div>
 
-			</div>
-		</section>
+				</div>
+			</section>
 
+			<!-- ============================= Info Entry ========================================================== -->
+			<section class="formEntry col-sm-5">
+				<form>
+					<div class="row">
+						<h3 class="col-sm-6" id="businessType"><span class="label label-primary"> [Business Type] </span></h3>
+						<button type="button" class="col-sm-4 btn btn-default buttonColor" id="generateCode">Generate Code</button>
+					</div>
+				 	<div class="row">
+	                    <div class="col-sm-3">Business Name:</div>
+	                    <div class="col-sm-9"><input type="text" class="form-control" id="name" placeholder="Organization Name" /></div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-sm-3">Website URL:</div>
+	                    <div class="col-sm-9"><input type="url" class="form-control" id="url" placeholder="Organization URL" /></div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-sm-3">Email:</div>
+	                    <div class="col-sm-9"><input type="email" class="form-control" id="email" placeholder="Organization Email" /></div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-sm-3">Phone:</div>
+	                    <div class="col-sm-9"><input type="number" class="form-control" id="phoneNumber" placeholder="Phone Number" /></div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-sm-3">Street:</div>
+	                    <div class="col-sm-9"><input type="text" class="form-control" id="streetAddress" placeholder="Enter Street Address Here"></div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-sm-3">City:</div>
+	                    <div class="col-sm-9"><input type="text" class="form-control" id="city" placeholder="Enter City Here"></div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-sm-3">State:</div>
+	                    <div class="col-sm-9"><input type="text" class="form-control" id="state" placeholder="Enter State Here"></div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-sm-3">Zip:</div>
+	                    <div class="col-sm-9"><input type="number" class="form-control" id="zip" placeholder="Enter Zip Code Here"></div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-sm-3">Rating:</div>
+	                    <div class="col-sm-9"><input type="number" class="form-control" id="rating" placeholder="Enter Rating (1-5 stars) Here"></div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-sm-3">Review Count:</div>
+	                    <div class="col-sm-9"><input type="number" class="form-control" id="reviews" placeholder="Enter Number of Reviews Here"></div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-sm-3">Price Range:</div>
+	                    <div class="col-sm-9"><input type="number" class="form-control" id="price" placeholder="Enter Price Range (1-5 '$'s )"></div>
+	                </div>
+					<div class="form-inline col-sm-12">
+						<h4>Payment Types Accepted: (click all that apply) </h4>
+						<div class="buttons">
+							<button type="button" class="btn btn-primary" data-toggle="button" id="visa"> Visa </button> 
+							<button type="button" class="btn btn-primary" data-toggle="button" id="masterCard"> MasterCard </button>
+							<button type="button" class="btn btn-primary" data-toggle="button" id="discover"> Discover </button>
+							<button type="button" class="btn btn-primary" data-toggle="button" id="amex"> Amex </button>
+							<button type="button" class="btn btn-primary" data-toggle="button" id="applePay"> ApplePay </button>
+							<button type="button" class="btn btn-primary" data-toggle="button" id="androidPay"> AndroidPay </button>
+							<button type="button" class="btn btn-primary" data-toggle="button" id="bitcoin"> Bitcoin </button>
+						</div>
+					</div>
+	<!-- Optional -->
+					<div id="restaurant" style="display: none;">
+						<div class="buttons">
+								<button id="reservation" type="button" class="btn btn-primary" data-toggle="button"> Accepts Reservations </button> 
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="menuAddress">Menu URL: </label>
+							<div class="col-sm-9">
+								<input type="url" class="form-control" id="menuAddress" placeholder="Enter Menu Web Address Here">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="cuisine">Cuisine: </label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="cuisine" placeholder="Enter Cuisine Types Here">
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
+		
 
-		<section class="formEntry col-sm-4">
-			<h3 id="businessType"><span class="label label-primary"> [Business Type] </span></h3>
-			<form class="form-horizontal" role="form">
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="name">Business Name: </label>
-					<div class="col-sm-9">
-						<input type="text" class="form-control" id="name" placeholder="Enter Organization Name Here">
-					</div>
+<!-- ============================   Output ============================================== -->
+			<section class="jsonOutput col-sm-4">
+				<h3><span class="label label-primary">JSON-LD Code</span></h3>
+				<div id="output">
+					
 				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="urlAddress">Website URL: </label>
-					<div class="col-sm-9">
-						<input type="url" class="form-control" id="urlAddress" placeholder="Enter Organization Web Address Here">
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="emailContact">Email: </label>
-					<div class="col-sm-9">
-						<input type="email" class="form-control" id="emailContact" placeholder="Enter Contact Email Address Here">
-					</div>
-				</div>
-				<div class="form-group"">
-					<label class="control-label col-sm-3" for="telephone">Phone: </label>
-					<div class="col-sm-9">
-						<input type="tel" class="form-control" id="telephone" placeholder="Enter Telephone Number Here">
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="streetAddress">Street: </label>
-					<div class="col-sm-9">
-						<input type="text" class="form-control" id="streetAddress" placeholder="Enter Street Address Here">
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="city">City: </label>
-					<div class="col-sm-9">
-						<input type="text" class="form-control" id="city" placeholder="Enter City Here">
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="state">State: </label>
-					<div class="col-sm-9">
-						<input type="text" class="form-control" id="state" placeholder="Enter State Here">
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="zip">Zip: </label>
-					<div class="col-sm-9">
-						<input type="number" class="form-control" id="zip" placeholder="Enter Zip Code Here">
-					</div>
-				</div>				
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="rating">Rating (stars): </label>
-					<div class="col-sm-9">
-						<input type="number" class="form-control" id="rating" placeholder="Enter Rating (1-5 stars) Here">
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="reviews">Review Count: </label>
-					<div class="col-sm-9">
-						<input type="number" class="form-control" id="reviews" placeholder="Enter Number of Reviews Here">
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="price">Price Range: </label>
-					<div class="col-sm-9">
-						<input type="number" class="form-control" id="price" placeholder="Enter Number of Reviews Here">
-					</div>
-				</div>
-				<div class="form-inline col-sm-12">
-					<h4>Payment Types Accepted: (click all that apply) </h5>
-					<div class="buttons">
-						<button type="button" class="btn btn-primary" data-toggle="button" id="visa"> Visa </button> 
-						<button type="button" class="btn btn-primary" data-toggle="button" id="masterCard"> MasterCard </button>
-						<button type="button" class="btn btn-primary" data-toggle="button" id="discover"> Discover </button>
-						<button type="button" class="btn btn-primary" data-toggle="button" id="amex"> Amex </button>
-						<button type="button" class="btn btn-primary" data-toggle="button" id="applePay"> ApplePay </button>
-						<button type="button" class="btn btn-primary" data-toggle="button" id="androidPay"> AndroidPay </button>
-						<button type="button" class="btn btn-primary" data-toggle="button" id="bitcoin"> Bitcoin </button>
-					</div>
-				</div>
-<!-- Optional -->
-				<div class="buttons">
-						<button id="reservation" type="button" class="btn btn-primary" data-toggle="button"> Accepts Reservations </button> 
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="menuAddress">Menu URL: </label>
-					<div class="col-sm-9">
-						<input type="url" class="form-control" id="menuAddress" placeholder="Enter Menu Web Address Here">
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-3" for="cuisine">Cuisine: </label>
-					<div class="col-sm-9">
-						<input type="url" class="form-control" id="cuisine" placeholder="Enter Cuisine Types Here">
-					</div>
-				</div>
-			</form>
-		</section>
-
-
-		<section class="jsonOutput col-sm-5">
-			<h3><span class="label label-primary">JSON-LD Code</span></h3>
-			<div class="buttons">
-					<button id="generateCode" type="button" class="btn btn-warning">Generate JSON-LD Code</button>
-			</div>
-			<div id="output">
-				
-			</div>
-
-		</section>
+			</section>
+		</div>
 	</section>
+
+<!-- ============================   Footer ============================================== -->
 	<footer>		
 		<div class="footer">&copy 2016 Schema.org Generator for SEO | JSON-LD
 		</div>			
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/generator.js"></script>
+	
 </body>
 </html>
