@@ -9,7 +9,7 @@ h3 {font-size: 3.5rem;margin-bottom: 25px;}
 h4 {font-size: 2rem;}
 p{font-size:1.5rem;}
 
-#output{ background-image:url("../images/clouds.png"); opacity:.7; margin: auto;} */
+#output{ background-image:url("../images/clouds.png"); opacity:.9; margin: auto; padding: 10px 15px;} 
 .topicSelect {width:20%; padding-bottom:70px;}
 .footer{text-align: center; position:fixed; bottom:0px; width:100%; background-color: black; color:white;}
 
@@ -24,3 +24,16 @@ p{font-size:1.5rem;}
 
 .blue{color:blue;}
 .hidden{ visibility: hidden; }
+
+#generateCode {
+	background-color: orange;
+	color:white;
+	margin-top:18px;
+	font-size:2.4rem;
+
+}
+.col-sm-3{
+	font-size: 1.6rem;
+	margin-top: 5px;
+	font-weight: bold;
+}
