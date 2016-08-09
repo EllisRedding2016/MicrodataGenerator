@@ -1,6 +1,7 @@
 body{
-	background-image: url("../images/overlook.jpg");
-	background-position:500%;
+	background-image: url("../images/Cloisters.jpg");
+	background-size: cover;
+	
 }
 h1 {font-size: 5rem;}
 h2 {font-size: 4rem;}
