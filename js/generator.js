@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
-	$("#businessType span").text($('h1').text());
+	//$("#businessType span").text($('h1').text());
+
+
+
+
 // Topic Select => Form Entry
 	$(".dropdown-menu")
 		.on("mouseenter","li",function(){
@@ -91,7 +95,8 @@ $(document).ready(function(){
 		if ($("#bitcoin").hasClass('active')) {payment += "Bitcoin, ";}
 		if(payment != null){payment = payment.substring(0,payment.length-2);}
 
-		var outputScript = '&lt;script type="application/ld+json"> { <br>';
+		var outputScript = '<a href="https://search.google.com/structured-data/testing-tool"> Test Your Code Here</a><br>';
+		outputScript += '&lt;script type="application/ld+json"> { <br>';
 		outputScript += '"@context" : "http://schema.org",<br>';
 		outputScript +='"@type" : "' + businessType + '", <br>';
 		if(city != "" && state != "" && zip != "" && street != "")
