@@ -7,10 +7,11 @@ h1 {font-size: 5rem;}
 h2 {font-size: 4rem;}
 p{font-size:1.5rem;}
 
-.content{width: 80%; background-image:url("../images/clouds.png"); opacity:.7; margin: auto;}
-.subcontent {width:60%; margin:auto; padding-bottom:70px;}
+.content{width: 80%; background-image:url("../images/clouds.png"); opacity:.9; margin: auto;}
+.subcontent {width:95%; margin:auto; padding-bottom:70px;}
 .footer{text-align: center; position:fixed; bottom:0px; width:100%; background-color: black; color:white;}
-
+.step{background-color:gray; color:white; border-radius: 15px;margin-bottom: 50px; margin-left: 15px}
+.image{border-radius: 15px; margin-bottom: 50px;}
 .hover{ background-color: steelblue; color: white; }
 
 .dropdown-menu {}
