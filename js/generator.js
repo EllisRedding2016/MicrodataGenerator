@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	//$("#businessType span").text($('h1').text());
+	$("#businessType span").text($('h1').text());
 
 
 
